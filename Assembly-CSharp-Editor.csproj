@@ -142,7 +142,6 @@
     <Compile Include="Assets\QFramework\Framework\6.FrameworkConfig\Editor\FrameworkMenuItems.cs" />
     <Compile Include="Assets\QFramework\Framework\6.FrameworkConfig\Editor\Info\FrameworkVersionInfo.cs" />
     <Compile Include="Assets\QFramework\Framework\6.FrameworkConfig\Editor\PreferencesWindow.cs" />
-    <Compile Include="Assets\QFramework\Framework\7.Tests\Editor\Issues.cs" />
     <Compile Include="Assets\ThirdPlugins\Plugins\HighlightingSystem\Editor\HighlighterEditor.cs" />
     <Compile Include="Assets\ThirdPlugins\Plugins\HighlightingSystem\Editor\HighlightingBlitterEditor.cs" />
     <Compile Include="Assets\ThirdPlugins\Plugins\HighlightingSystem\Editor\HighlightingPresetEditor.cs" />
