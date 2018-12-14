@@ -35,11 +35,11 @@ public class MediaItemInfo
 	/// <summary>
 	/// 媒体的点位
 	/// </summary>
-	public Vector3 v3MediaPosition = "";
+	public Vector3 v3MediaPosition = Vector3.zero;
 	/// <summary>
 	/// 媒体的旋转角
 	/// </summary>
-	public Vector3 v3MediaRotation = "";
+	public Vector3 v3MediaRotation = Vector3.zero;
 
 
 }
