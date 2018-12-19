@@ -10,5 +10,20 @@ namespace QFramework.UIExample
         {
             ChangeMenuColor = 3001,//ui事件ID为3000～5999，见QMsgSpan
         }
+
+        public enum GameMainPanel
+        {
+
+        }
+
+        public enum StartPanel
+        {
+
+        }
+
+        public enum MediaInfoPanel
+        {
+
+        }
     }
 }
