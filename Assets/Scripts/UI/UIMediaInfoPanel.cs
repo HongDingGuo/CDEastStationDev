@@ -16,6 +16,7 @@ namespace QFramework.Example
 
 	public partial class UIMediaInfoPanel : UIPanel
 	{
+		UIMediaInfoPanelData mData = null;
 		protected override void InitUI(IUIData uiData = null)
 		{
 			mData = uiData as UIMediaInfoPanelData ?? new UIMediaInfoPanelData();
@@ -29,6 +30,13 @@ namespace QFramework.Example
 
 		protected override void RegisterUIEvent()
 		{
+			BackBtn.onClick.AddListener (()=>{
+				
+			});
+
+			DetailBtn.onClick.AddListener (()=>{
+				
+			});
 		}
 
 		protected override void OnShow()
@@ -51,6 +59,14 @@ namespace QFramework.Example
 			Debug.Log("[ UIMediaInfoPanel:]" + content);
 		}
 
-		UIMediaInfoPanelData mData = null;
+		public void ShowMediaInfo(MediaItemInfo info){
+			if (info != null) {
+				MediaTypeValue.text = info.iMediaType.ToString();
+				MediaFormatValue.text = info.sMediaSize;
+				MediaLocationValue.text = info.sMediaLocation;
+				MediaNumberValue.text = info.sMediaNumber;
+			} else
+				Debug.Log ("mediainfo is null ... ");
+		}
 	}
 }

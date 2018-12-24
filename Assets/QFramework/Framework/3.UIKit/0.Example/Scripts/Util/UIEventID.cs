@@ -18,6 +18,7 @@ namespace QFramework.UIExample
 
         public enum StartPanel
         {
+			ClickEastBtn = 3001,
 
         }
 

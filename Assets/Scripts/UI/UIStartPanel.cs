@@ -29,7 +29,41 @@ namespace QFramework.Example
 
 		protected override void RegisterUIEvent()
 		{
+			ComfirmBtn.onClick.AddListener(() =>
+				{
+					UIMgr.OpenPanel<UIGameMainPanel>(UILevel.Common, prefabName: "UIGameMainPanel");
+					QUIManager.Instance.HideUI(this.name);
+				});
+			EastBtn.onClick.AddListener (()=>{
+				
+			});
+
+			SouthBtn.onClick.AddListener (()=>{
+
+			});
+
+			WestBtn.onClick.AddListener (()=>{
+
+			});
+
+			NorthBtn.onClick.AddListener (()=>{
+
+			});
+
+			QuitBtn.onClick.AddListener (()=>{
+				QuitGame();
+			});
 		}
+
+		private void QuitGame(){
+			#if UNITY_EDITOR
+			UnityEditor.EditorApplication.isPlaying = false;
+			#elif UNITY_IOS||UNITY_ANDROID
+			Application.Quit();
+			#endif
+		}
+
+
 
 		protected override void OnShow()
 		{

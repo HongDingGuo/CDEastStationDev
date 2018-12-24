@@ -4,6 +4,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using QFramework;
+using QFramework.Example;
+
 public class MediaItem : MonoBehaviour {
 
 	public SpriteRenderer srAdpicture;
@@ -20,7 +22,10 @@ public class MediaItem : MonoBehaviour {
 
     public void ShowMediaInfoPanel(Gesture gesture)
     {
-        UIMgr.OpenPanel("UIMediaInfoPanel");
+		UIMgr.OpenPanel<UIMediaInfoPanel>(UILevel.Common, prefabName: "UIMediaInfoPanel");
+		UIMgr.GetPanel<UIMediaInfoPanel> ();
+		QUIManager.Instance.HideUI(this.name);
+
     }
 
     public void ShowHighLight(Gesture gesture)
