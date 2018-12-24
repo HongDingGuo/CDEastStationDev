@@ -4529,7 +4529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &815512232
 Transform:
   m_ObjectHideFlags: 0
@@ -5902,12 +5902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2573bdf483fe3194cb0853fa177ec059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startPanel: {fileID: 0}
-  mediaInfoPalen: {fileID: 0}
-  gameMainPanel: {fileID: 0}
-  obj_player: {fileID: 0}
-  obj_ShowCamera: {fileID: 0}
-  obj_joystick: {fileID: 0}
 --- !u!114 &992987429
 MonoBehaviour:
   m_ObjectHideFlags: 0
