@@ -29,6 +29,9 @@ namespace QFramework.Example
 
 		protected override void RegisterUIEvent()
 		{
+            A13Btn.onClick.AddListener(()=> {
+
+            });
 		}
 
 		protected override void OnShow()
@@ -44,6 +47,7 @@ namespace QFramework.Example
 		protected override void OnClose()
 		{
 			base.OnClose();
+            UnRegisterAllEvent();
 		}
 
 		void ShowLog(string content)
