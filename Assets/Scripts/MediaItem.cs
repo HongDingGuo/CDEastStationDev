@@ -47,10 +47,14 @@ public class MediaItem : MonoBehaviour {
     }
 
 
-    public void ShowHighLight(Gesture gesture)
+    public void ShowHighLight()
     {
         this.highLight.SwithHightlight(true);
     }
+
+	public void HideHightLight(){
+		this.highLight.SwithHightlight(false);
+	}
 
 
 

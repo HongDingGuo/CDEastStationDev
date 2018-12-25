@@ -31,23 +31,30 @@ namespace QFramework.Example
 		{
 			ComfirmBtn.onClick.AddListener(() =>
 				{
-					UIMgr.OpenPanel<UIGameMainPanel>(UILevel.Common, prefabName: "UIGameMainPanel");
-					QUIManager.Instance.HideUI(this.name);
+					CDGameManager.Instance.ShowCircleCamera();
 				});
 			EastBtn.onClick.AddListener (()=>{
-				
+				CDGameManager.Instance.SetPlayerPosition(Vector3.zero,Vector3.zero);
+				UIMgr.OpenPanel<UIGameMainPanel>(UILevel.Common, prefabName: "UIGameMainPanel");
+				QUIManager.Instance.HideUI(this.name);
 			});
 
 			SouthBtn.onClick.AddListener (()=>{
-
+				CDGameManager.Instance.SetPlayerPosition(Vector3.zero,Vector3.zero);
+				UIMgr.OpenPanel<UIGameMainPanel>(UILevel.Common, prefabName: "UIGameMainPanel");
+				QUIManager.Instance.HideUI(this.name);
 			});
 
 			WestBtn.onClick.AddListener (()=>{
-
+				CDGameManager.Instance.SetPlayerPosition(Vector3.zero,Vector3.zero);
+				UIMgr.OpenPanel<UIGameMainPanel>(UILevel.Common, prefabName: "UIGameMainPanel");
+				QUIManager.Instance.HideUI(this.name);
 			});
 
 			NorthBtn.onClick.AddListener (()=>{
-
+				CDGameManager.Instance.SetPlayerPosition(Vector3.zero,Vector3.zero);
+				UIMgr.OpenPanel<UIGameMainPanel>(UILevel.Common, prefabName: "UIGameMainPanel");
+				QUIManager.Instance.HideUI(this.name);
 			});
 
 			QuitBtn.onClick.AddListener (()=>{

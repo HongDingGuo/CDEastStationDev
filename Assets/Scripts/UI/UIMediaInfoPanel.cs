@@ -31,11 +31,15 @@ namespace QFramework.Example
 		protected override void RegisterUIEvent()
 		{
 			BackBtn.onClick.AddListener (()=>{
-				
+				UIMgr.OpenPanel<UIGameMainPanel>(UILevel.Common, prefabName: "UIGameMainPanel");
+				QUIManager.Instance.HideUI(this.name);
 			});
 
 			DetailBtn.onClick.AddListener (()=>{
-				
+				ADBackground.gameObject.SetActive(true);
+			});
+			CloseDetailbtn.onClick.AddListener (()=>{
+				ADBackground.gameObject.SetActive(false);
 			});
 		}
 

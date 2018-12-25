@@ -80,6 +80,44 @@ public class MediaInfoManager : ISingleton
         }
     }
 
+	/// <summary>
+	/// 搜索功能的实现
+	/// </summary>
+	public void DoSearchItem(string searchkey){
+		if (DicAllItem == null) {
+			Debug.LogError (" no items info ...");
+			return;
+		}
+		string tempStr = "";
+		foreach (string keys in DicAllItem.Keys) {
+			string[] strArray = keys.Split (',');
+			if (strArray != null && strArray.Length > 0) {
+				int arrayLength = strArray.Length;
+				for (int i = 0; i < arrayLength; ++i) {
+					if (searchkey.Equals (strArray [i])) {
+						DicAllItem [keys].ShowHighLight ();
+						CDGameManager.Instance.SetPlayerPosition (Vector3.zero,Vector3.zero);
+						Debug.LogError (" ... search is : "+ keys);
+						return;
+					}
+				}
+
+			}
+
+		}
+	}
+
+	/// <summary>
+	/// 隐藏所有媒体点位的高亮显示
+	/// </summary>
+	public void HideAllItemHighLight(){
+		if (DicAllItem != null) {
+			foreach(string key in DicAllItem.Keys){
+				DicAllItem [key].HideHightLight();
+			}
+		}
+	}
+
     #region 临时媒体信息
 
     /// <summary>

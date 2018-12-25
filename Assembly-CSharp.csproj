@@ -668,7 +668,7 @@
      <Compile Include="Assets\QFramework\Framework\6.FrameworkConfig\FrameworkSettingData.cs" />
      <Compile Include="Assets\QFramework\Framework\6.FrameworkConfig\QFramework.cs" />
      <Compile Include="Assets\Scripts\CameraContral.cs" />
-     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\CDGameManager.cs" />
      <Compile Include="Assets\Scripts\Manager\MediaInfoManager.cs" />
      <Compile Include="Assets\Scripts\MediaItem.cs" />
      <Compile Include="Assets\Scripts\MediaItemInfo.cs" />
